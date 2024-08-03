@@ -1,0 +1,45 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    color:white;
+    font-weight: bold;
+    font-size: large;
+    font-family: 'Times New Roman';
+    
+    
+}
+
+.navbar{
+    background-color: rgb(97, 12, 90);
+    border-bottom-left-radius:50px;
+    border-bottom-right-radius:50px;
+     margin: 1%;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    height: 15vh;
+    h1{
+        font-size: larger;
+    }
+
+}
+.body{
+    background-color: rgb(233, 136, 9);
+    border-radius:50px;
+    height: 85vh;
+    padding: 3%;
+    margin: 1%;
+    .textInput{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+.taskList{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3%;
+    
+}
