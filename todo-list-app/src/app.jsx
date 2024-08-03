@@ -10,7 +10,7 @@ export function App() {
 
       <Navbar />
       <Body />
-   
+
     </div>
   )
 }
