@@ -1,0 +1,87 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  /* background-color: rgb(243, 243, 202); */
+}
+
+.app {
+  width: 100vw;
+  height: 90vh;
+  background-color: rgb(243, 243, 202);
+}
+
+.mainScreen {
+  display: flex;
+  height: 100%;
+  margin-top: 2%;
+  /* margin-bottom: 10%; */
+  /* padding-bottom: 10%; */
+  justify-content: center;
+
+
+}
+
+.currentLocation {
+  background-color: rgb(25, 15, 80);
+  width: 40%;
+  color: whitesmoke;
+  background-image: url('https://images.pexels.com/photos/1624496/pexels-photo-1624496.jpeg?auto=compress&cs=tinysrgb&w=600');
+  background-repeat: no-repeat;
+  /* opacity: 0.5; */
+  background-size: cover;
+  height: 100%;
+  display: flex;
+    flex-direction: column;
+
+    align-items: stretch;
+    justify-content: space-between;
+
+  .location {
+    position: relative;
+    left: 35%;
+    
+    /* border: 1px solid yellow; */
+    /* padding: 7%; */
+    /* padding: 7%;
+    padding-bottom: 0%; */
+    
+  }
+  
+  .timeTemp {
+    /* border: 1px solid red; */
+    padding: 7%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+
+}
+/* .location {
+  display: 'flex';
+  justify-content: 'flex-end';
+  border: '1px solid yellow';
+  padding: '7%';
+  height: '70%';
+}
+
+.timeTemp {
+  border: '1px solid red';
+  display: 'flex';
+  justify-content: 'space-between';
+} */
+
+
+
+.searchCity {
+  /* background-color: black; */
+  color: white;
+  background: url('https://images.pexels.com/photos/25252452/pexels-photo-25252452/free-photo-of-clouds-in-sky-in-black-and-white.jpeg?auto=compress&cs=tinysrgb&w=600')no-repeat center center fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+/* opacity: 0.5; */
+  width: 30%;
+}
