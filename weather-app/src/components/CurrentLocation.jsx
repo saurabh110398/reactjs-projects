@@ -11,7 +11,7 @@ const CurrentLocation = ({ localData, setLocalData }) => {
 
     useEffect(() => {
         navigator.geolocation.getCurrentPosition((position) => {
-            console.log(position);
+            // console.log(position);
             getDetailsByCurrentLocation(position.coords.latitude, position.coords.longitude)
                 .then(response => {
                     setLocalData(prev => ({

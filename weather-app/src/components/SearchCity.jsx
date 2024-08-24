@@ -8,19 +8,26 @@ import { getDataByCity } from '../api/weatherApi';
 
 const SearchCity = ({ localData }) => {
 
-    let [searchData, setSearchData] = useState({ apiData: localData?.apiData });
+    let [searchData, setSearchData] = useState({  });
 
-    // let [refresh, setRefresh] = useState(0);
+    let [refresh, setRefresh] = useState(0);
 
     let imgSource = `https://openweathermap.org/img/wn/${localData.apiData?.weather[0].icon}@2x.png`;
     let cityImageSource = `https://openweathermap.org/img/wn/${searchData.apiData?.weather[0].icon}@2x.png`;
 
     useEffect(() => {
-        console.log('localData searchdata  :: ', localData);
-        setTimeout(() => {
-            setRefresh(prev => prev + 1);
-        }, 2000)
-    }, [localData, searchData])
+        console.log('localData   :: ', localData);
+        // console.log(' searchdata  :: ', searchData);
+        // setRefresh(prev => prev + 1);
+        setSearchData({
+            ['apiData']:localData.apiData
+        })
+    }, [localData])
+    useEffect(() => {
+        // console.log('localData   :: ', localData);
+        console.log(' searchdata  :: ', searchData);
+        // setRefresh(prev => prev + 1);
+    }, [searchData])
 
 
 
